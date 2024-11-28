@@ -14,3 +14,9 @@ npm install
 ```
 npm run dev
 ```
+
+## For tests
+Make sure that back-end is started
+```
+npm test
+```
