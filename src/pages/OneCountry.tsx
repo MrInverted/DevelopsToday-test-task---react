@@ -40,11 +40,13 @@ function OneCountry() {
 
   return (
     <div className='flex flex-col gap-5'>
+      <div className="flex">
+        <Link to="/" className='ml-auto self-end font-bold hover:opacity-50'>To all countries</Link>
+      </div>
+
       <div className="flex items-center gap-2">
         <h1 className='text-xl font-bold'>{officialName}</h1>
-        <img className='h-8' src={flagUrl} alt={officialName + " flag"} />
-
-        <Link to="/" className='ml-auto self-end font-bold hover:opacity-50'>To all countries</Link>
+        {flagUrl && <img className='h-8' src={flagUrl} alt={officialName + " flag"} />}
       </div>
 
       <div className='flex flex-col gap-2'>
